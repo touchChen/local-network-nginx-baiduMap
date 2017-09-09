@@ -14,7 +14,8 @@ RUN NGINX_VERSION=1.12.1 \
 
 COPY nginx.conf /usr/local/nginx/conf/nginx.conf
 
-RUN cd /usr/local/nginx/sbin \
-    && ./nginx
-
 EXPOSE 10086
+
+CMD ["/usr/local/nginx/sbin/nginx"]
+
+
