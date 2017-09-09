@@ -8,7 +8,7 @@ docker build -t nginx:baiduMap .
 
 启动容器：
 ```
-docker run -itd -p 10086:10086 --name baiduMap nginx:baiduMap /bin/bash
+docker run -itd -p 10086:10086 --name baiduMap nginx:baiduMap /usr/local/nginx/sbin/nginx
 ```
 
 进入容器：
