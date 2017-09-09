@@ -16,3 +16,5 @@ COPY nginx.conf /usr/local/nginx/conf/nginx.conf
 
 RUN cd /usr/local/nginx/sbin \
     && ./nginx
+
+EXPOSE 10086
