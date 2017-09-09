@@ -1,7 +1,7 @@
 FROM centos:7
 
 RUN yum update -y \
-    && yum install wget libpcre3 libpcre3-dev openssl libssl-dev pcre-devel zlib1g zlib1g.de -y
+    && yum install wget git libpcre3 libpcre3-dev openssl libssl-dev pcre-devel zlib1g zlib1g.de -y
 RUN NGINX_VERSION=1.12.1 \
     && mkdir /opt/nginx \
     && cd /opt/nginx \
