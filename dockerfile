@@ -16,6 +16,6 @@ COPY nginx.conf /usr/local/nginx/conf/nginx.conf
 
 EXPOSE 10086
 
-CMD ["/usr/local/nginx/sbin/nginx", "-g", "daemon off;"]
+CMD ["/usr/local/nginx/sbin/nginx"]
 
 
